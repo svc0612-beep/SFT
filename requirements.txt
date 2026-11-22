@@ -1,0 +1,26 @@
+# 테슬라 Model S 매뉴얼 koGPT2 SFT 프로젝트 — 필요한 라이브러리
+# 설치: pip install -r requirements.txt
+# (Python 3.11, Windows, NVIDIA GPU 기준으로 테스트)
+
+# ---- PyTorch (GPU/CUDA 12.8 버전) ----
+# 아래 주소에서 GPU용 torch를 받아옴. 이 줄이 없으면 CPU 전용 torch가 깔림
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.11.0+cu128
+numpy==2.4.6
+
+# ---- 1~2단계: PDF 추출·전처리 ----
+pymupdf>=2.1
+
+# ---- 3단계: OpenAI로 Q&A 생성 ----
+openai
+python-dotenv
+
+# ---- 5~7단계: koGPT2 학습 ----
+transformers==5.24.0
+tokenizers==0.23.3
+safetensors==0.8.0
+accelerate==1.16.0
+bitsandbytes==0.50.2
+
+# ---- 7-4단계: 채팅 화면 ----
+gradio==6.32.0
