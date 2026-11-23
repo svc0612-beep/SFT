@@ -22,3 +22,6 @@ __pycache__/
 .idea/
 Thumbs.db
 .DS_Store
+
+# ===== 압축 백업 =====
+*.zip

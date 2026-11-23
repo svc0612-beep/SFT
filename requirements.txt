@@ -24,3 +24,6 @@ bitsandbytes==0.50.2
 
 # ---- 7-4단계: 채팅 화면 ----
 gradio==6.32.0
+
+# ---- 8단계: EXAONE LoRA 파인튜닝 ----
+peft
